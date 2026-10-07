@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop our teas | Mistyhill Ceylon Tea</title>
+  <meta name="description" content="Buy hand-picked Ceylon black, green, spiced and white teas from Mistyhill's family estate in Nuwara Eliya.">
+  <meta name="theme-color" content="#2F5D3A">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Mistyhill Ceylon Tea, home">
+        <svg class="logo-mark" viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="18" r="18" fill="#2F5D3A"/>
+          <path d="M4.5 25c4.2-4.6 8.4-6.8 13.5-6.8S27.3 20.4 31.5 25" fill="none" stroke="#F7F5F0" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M8 29.5c3.4-3 6.6-4.4 10-4.4s6.6 1.4 10 4.4" fill="none" stroke="#F7F5F0" stroke-width="1.6" stroke-linecap="round" opacity=".55"/>
+          <path d="M18 16.5c0-4.6 3-7.8 7.6-7.8 0 4.6-3 7.8-7.6 7.8Z" fill="#C9A227"/>
+          <path d="M18 16.5c0-3.6-2.4-6.1-6-6.1 0 3.6 2.4 6.1 6 6.1Z" fill="#C9A227" opacity=".7"/>
+        </svg>
+        <span class="logo-text">
+          <span class="logo-name">Mistyhill</span>
+          <span class="logo-sub">Ceylon Tea</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html" aria-current="page">Shop</a></li>
+          <li><a href="tours.html">Tea Tours</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="currency-toggle" role="group" aria-label="Currency">
+          <button type="button" data-currency="LKR" aria-pressed="true">LKR</button>
+          <button type="button" data-currency="USD" aria-pressed="false">USD</button>
+        </div>
+        <a class="cart-link" href="cart.html" data-cart-link aria-label="Cart, 0 items">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg>
+          <span class="cart-count is-empty" data-cart-count aria-hidden="true">0</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Open menu">
+          <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head" aria-labelledby="page-title">
+      <div class="container">
+        <h1 class="page-title" id="page-title">Shop our teas</h1>
+        <p class="page-intro">Grown, hand-picked and packed on our estate in Nuwara Eliya. Use the LKR and USD switch at the top to see prices in your currency.</p>
+      </div>
+    </section>
+
+    <section class="section section--flush-top" aria-label="All teas">
+      <div class="container">
+        <div class="product-grid product-grid--shop" data-product-grid></div>
+        <noscript><p class="noscript-note">Turn on JavaScript to see our teas, prices and cart.</p></noscript>
+
+        <aside class="wholesale" aria-labelledby="wholesale-title">
+          <div class="wholesale__media">
+            <img src="https://images.unsplash.com/photo-1617543414010-212c4537604d?auto=format&fit=crop&w=1000&h=800&q=70"
+                 width="1000" height="800" loading="lazy"
+                 alt="A cup of black tea on a saucer, set on a wooden table">
+          </div>
+          <div class="wholesale__body">
+            <h2 class="wholesale__title" id="wholesale-title">Wholesale &amp; hotels</h2>
+            <p class="wholesale__text">Buying in bulk for a hotel, café or shop? Contact us for a quote.</p>
+            <a class="btn btn--gold" href="contact.html?inquiry=wholesale#contact-form">Request a quote</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-logo">Mistyhill Ceylon Tea</p>
+        <p class="footer-tagline">Family-grown, hand-picked tea from the hills of Nuwara Eliya since 1962.</p>
+      </div>
+      <div>
+        <h2 class="footer-heading">Get in touch</h2>
+        <ul class="footer-list">
+          <li><a href="mailto:hello@mistyhilltea.lk">hello@mistyhilltea.lk</a></li>
+          <li><a href="tel:+94520000000">+94 52 000 0000</a></li>
+          <li><span class="footer-list__label">WhatsApp</span> <a href="https://wa.me/94770000000">+94 77 000 0000</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer-heading">Our outlets</h2>
+        <ul class="footer-list">
+          <li><a href="contact.html#outlets">Nuwara Eliya</a></li>
+          <li><a href="contact.html#outlets">Kandy</a></li>
+          <li><a href="contact.html#outlets">Colombo</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span data-year>2026</span> Mistyhill Ceylon Tea. All rights reserved.</p>
+      <p>Open daily, 9:00 AM to 7:00 PM</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your cart | Mistyhill Ceylon Tea</title>
+  <meta name="description" content="Review your Mistyhill Ceylon Tea order and check out.">
+  <meta name="theme-color" content="#2F5D3A">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Mistyhill Ceylon Tea, home">
+        <svg class="logo-mark" viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="18" r="18" fill="#2F5D3A"/>
+          <path d="M4.5 25c4.2-4.6 8.4-6.8 13.5-6.8S27.3 20.4 31.5 25" fill="none" stroke="#F7F5F0" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M8 29.5c3.4-3 6.6-4.4 10-4.4s6.6 1.4 10 4.4" fill="none" stroke="#F7F5F0" stroke-width="1.6" stroke-linecap="round" opacity=".55"/>
+          <path d="M18 16.5c0-4.6 3-7.8 7.6-7.8 0 4.6-3 7.8-7.6 7.8Z" fill="#C9A227"/>
+          <path d="M18 16.5c0-3.6-2.4-6.1-6-6.1 0 3.6 2.4 6.1 6 6.1Z" fill="#C9A227" opacity=".7"/>
+        </svg>
+        <span class="logo-text">
+          <span class="logo-name">Mistyhill</span>
+          <span class="logo-sub">Ceylon Tea</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="tours.html">Tea Tours</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="currency-toggle" role="group" aria-label="Currency">
+          <button type="button" data-currency="LKR" aria-pressed="true">LKR</button>
+          <button type="button" data-currency="USD" aria-pressed="false">USD</button>
+        </div>
+        <a class="cart-link" href="cart.html" data-cart-link aria-current="page" aria-label="Cart, 0 items">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg>
+          <span class="cart-count is-empty" data-cart-count aria-hidden="true">0</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Open menu">
+          <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="cart-page" data-cart-page>
+    <section class="page-head" aria-labelledby="page-title">
+      <div class="container">
+        <h1 class="page-title" id="page-title">Your cart</h1>
+        <p class="page-intro">Check your teas, add your delivery details, and we'll bring your order to your door.</p>
+      </div>
+    </section>
+
+    <div class="container">
+      <!-- Cart with items -->
+      <div class="cart-layout" data-cart-layout hidden>
+        <div class="cart-main">
+          <section class="panel" aria-labelledby="cart-items-title">
+            <h2 class="panel__title" id="cart-items-title" tabindex="-1" data-cart-heading>Teas in your cart</h2>
+            <ul class="cart-list" data-cart-list></ul>
+          </section>
+
+          <form class="panel" id="checkout-form" novalidate aria-labelledby="checkout-title">
+            <h2 class="panel__title" id="checkout-title">Delivery details</h2>
+            <p class="panel__intro">Every field is required.</p>
+
+            <div class="form-grid form-grid--2">
+              <div class="field field--full">
+                <label for="co-name">Full name</label>
+                <input class="input" id="co-name" name="fullName" type="text" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="co-email">Email</label>
+                <input class="input" id="co-email" name="email" type="email" autocomplete="email" inputmode="email" required>
+              </div>
+              <div class="field">
+                <label for="co-phone">Phone</label>
+                <input class="input" id="co-phone" name="phone" type="tel" autocomplete="tel" placeholder="+94 77 123 4567" required>
+              </div>
+              <div class="field field--full">
+                <label for="co-country">Country</label>
+                <select class="input" id="co-country" name="country" required>
+                  <option value="">Choose a country</option>
+                  <option value="sri-lanka">Sri Lanka</option>
+                  <option value="other">Other country</option>
+                </select>
+              </div>
+              <div class="field field--full">
+                <label for="co-address">Delivery address</label>
+                <textarea class="input" id="co-address" name="address" rows="3" autocomplete="street-address" required></textarea>
+              </div>
+            </div>
+
+            <fieldset class="field field--group payment-group">
+              <legend>Payment method</legend>
+              <div class="choice-list">
+                <label class="choice">
+                  <input type="radio" name="payment" value="cod" checked>
+                  <span>
+                    <span class="choice__title">Cash on delivery (Sri Lanka only)</span>
+                    <span class="choice__hint">Pay in cash when your tea arrives.</span>
+                  </span>
+                </label>
+                <label class="choice">
+                  <input type="radio" name="payment" value="card" disabled>
+                  <span>
+                    <span class="choice__title">Card (coming soon)</span>
+                    <span class="choice__hint">Online card payment isn't available yet.</span>
+                  </span>
+                </label>
+              </div>
+              <p class="field-note" data-payment-note hidden>
+                Cash on delivery is for Sri Lanka only, and card payment is coming soon. To order from abroad,
+                <a href="contact.html?inquiry=export#contact-form">send us an export inquiry</a>.
+              </p>
+            </fieldset>
+          </form>
+        </div>
+
+        <aside class="panel order-summary" data-cart-summary aria-labelledby="summary-title">
+          <h2 class="panel__title" id="summary-title">Order summary</h2>
+          <dl class="summary-lines">
+            <div>
+              <dt data-subtotal-label>Subtotal</dt>
+              <dd data-subtotal></dd>
+            </div>
+            <div>
+              <dt data-delivery-label>Delivery in Sri Lanka</dt>
+              <dd data-delivery></dd>
+            </div>
+            <div class="summary-total">
+              <dt>Total</dt>
+              <dd data-total></dd>
+            </div>
+          </dl>
+          <p class="summary-note" data-delivery-note></p>
+          <button class="btn btn--primary btn--block" type="submit" form="checkout-form">Place order</button>
+          <p class="form-error" data-form-error role="alert"></p>
+          <p class="summary-secure">You pay nothing now. We'll call to confirm before delivery.</p>
+        </aside>
+      </div>
+
+      <!-- Empty cart -->
+      <section class="panel state-card" data-cart-empty hidden aria-labelledby="empty-title">
+        <div class="state-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h13v4a6 6 0 0 1-6 6h-1a6 6 0 0 1-6-6v-4Z"/><path d="M17 11.5h1.5a2.5 2.5 0 0 1 0 5H16.5"/><path d="M8 3.5c-.8 1 .8 2 0 3M12 3.5c-.8 1 .8 2 0 3"/></svg>
+        </div>
+        <h2 id="empty-title">Your cart is empty</h2>
+        <p>Add a tea from the shop and it will show up here.</p>
+        <a class="btn btn--primary" href="shop.html">Browse our teas</a>
+      </section>
+
+      <!-- Order placed -->
+      <section class="panel state-card" data-order-confirmation hidden tabindex="-1" aria-labelledby="confirm-title">
+        <div class="state-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>
+        </div>
+        <h2 id="confirm-title">Thank you, <span data-order-name></span>. Your order is placed.</h2>
+        <p>Your order number is</p>
+        <p class="order-number" data-order-number></p>
+        <p>We'll call you on <strong data-order-phone></strong> to confirm your delivery. You'll pay in cash when your tea arrives.</p>
+        <a class="btn btn--primary" href="shop.html">Continue shopping</a>
+      </section>
+
+      <noscript><p class="noscript-note">Turn on JavaScript to see your cart and check out.</p></noscript>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-logo">Mistyhill Ceylon Tea</p>
+        <p class="footer-tagline">Family-grown, hand-picked tea from the hills of Nuwara Eliya since 1962.</p>
+      </div>
+      <div>
+        <h2 class="footer-heading">Get in touch</h2>
+        <ul class="footer-list">
+          <li><a href="mailto:hello@mistyhilltea.lk">hello@mistyhilltea.lk</a></li>
+          <li><a href="tel:+94520000000">+94 52 000 0000</a></li>
+          <li><span class="footer-list__label">WhatsApp</span> <a href="https://wa.me/94770000000">+94 77 000 0000</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer-heading">Our outlets</h2>
+        <ul class="footer-list">
+          <li><a href="contact.html#outlets">Nuwara Eliya</a></li>
+          <li><a href="contact.html#outlets">Kandy</a></li>
+          <li><a href="contact.html#outlets">Colombo</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span data-year>2026</span> Mistyhill Ceylon Tea. All rights reserved.</p>
+      <p>Open daily, 9:00 AM to 7:00 PM</p>
+    </div>
+  </footer>
+</body>
+</html>

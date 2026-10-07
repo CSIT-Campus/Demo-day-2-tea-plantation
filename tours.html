@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tea tours | Mistyhill Ceylon Tea</title>
+  <meta name="description" content="Book a two-hour estate and factory tour at Mistyhill in Nuwara Eliya, with a tasting of five teas.">
+  <meta name="theme-color" content="#2F5D3A">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Mistyhill Ceylon Tea, home">
+        <svg class="logo-mark" viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="18" r="18" fill="#2F5D3A"/>
+          <path d="M4.5 25c4.2-4.6 8.4-6.8 13.5-6.8S27.3 20.4 31.5 25" fill="none" stroke="#F7F5F0" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M8 29.5c3.4-3 6.6-4.4 10-4.4s6.6 1.4 10 4.4" fill="none" stroke="#F7F5F0" stroke-width="1.6" stroke-linecap="round" opacity=".55"/>
+          <path d="M18 16.5c0-4.6 3-7.8 7.6-7.8 0 4.6-3 7.8-7.6 7.8Z" fill="#C9A227"/>
+          <path d="M18 16.5c0-3.6-2.4-6.1-6-6.1 0 3.6 2.4 6.1 6 6.1Z" fill="#C9A227" opacity=".7"/>
+        </svg>
+        <span class="logo-text">
+          <span class="logo-name">Mistyhill</span>
+          <span class="logo-sub">Ceylon Tea</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="tours.html" aria-current="page">Tea Tours</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="currency-toggle" role="group" aria-label="Currency">
+          <button type="button" data-currency="LKR" aria-pressed="true">LKR</button>
+          <button type="button" data-currency="USD" aria-pressed="false">USD</button>
+        </div>
+        <a class="cart-link" href="cart.html" data-cart-link aria-label="Cart, 0 items">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg>
+          <span class="cart-count is-empty" data-cart-count aria-hidden="true">0</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Open menu">
+          <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero mist-fade" aria-labelledby="page-title">
+      <img class="page-hero__image"
+           src="https://images.unsplash.com/photo-1544015759-237f87d55ef3?auto=format&fit=crop&w=1600&q=70"
+           srcset="https://images.unsplash.com/photo-1544015759-237f87d55ef3?auto=format&fit=crop&w=900&q=70 900w,
+                   https://images.unsplash.com/photo-1544015759-237f87d55ef3?auto=format&fit=crop&w=1600&q=70 1600w,
+                   https://images.unsplash.com/photo-1544015759-237f87d55ef3?auto=format&fit=crop&w=2400&q=70 2400w"
+           sizes="100vw" alt="" fetchpriority="high">
+      <div class="container page-hero__content">
+        <h1 class="page-title" id="page-title">Visit the estate</h1>
+        <p class="page-intro">Spend two hours with us in the tea fields and the factory, then taste what we make.</p>
+        <a class="btn btn--primary page-hero__jump" href="#tour-form">Book your tour</a>
+      </div>
+    </section>
+
+    <div class="container tour-layout">
+      <section aria-labelledby="tour-title">
+        <h2 class="section-title" id="tour-title">Estate &amp; Factory Tour</h2>
+
+        <dl class="tour-facts">
+          <div>
+            <dt>Duration</dt>
+            <dd>2 hours</dd>
+          </div>
+          <div>
+            <dt>Price</dt>
+            <dd><span data-lkr="2500" data-usd="8">LKR 2,500</span> <small>per person</small></dd>
+          </div>
+          <div>
+            <dt>Daily times</dt>
+            <dd>3 tours a day <small>9:00&nbsp;AM, 11:00&nbsp;AM, 2:00&nbsp;PM</small></dd>
+          </div>
+          <div>
+            <dt>Group size</dt>
+            <dd>Up to 15 <small>people per slot</small></dd>
+          </div>
+        </dl>
+
+        <ol class="steps" aria-label="What you'll do on the tour">
+          <li>
+            <div>
+              <h3>Walk through the tea fields</h3>
+              <p>Follow the paths between the rows of tea bushes on the hillside.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>See hand-plucking</h3>
+              <p>Watch our pluckers pick the young leaves by hand, the way every Mistyhill tea is harvested.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Visit the factory</h3>
+              <p>See fresh leaves turned into finished tea in the factory we modernised in 2018.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Taste five teas</h3>
+              <p>Finish with a tasting of five of our teas, and find the one you'd like to take home.</p>
+            </div>
+          </li>
+        </ol>
+
+        <figure class="tour-photo">
+          <img src="https://images.unsplash.com/photo-1567922045116-2a00fae2ed03?auto=format&fit=crop&w=1200&h=750&q=70"
+               width="1200" height="750" loading="lazy"
+               alt="A small white bowl of tea resting among green tea leaves">
+          <figcaption>The tour ends with a tasting of five teas.</figcaption>
+        </figure>
+      </section>
+
+      <form class="panel booking-card" id="tour-form" novalidate aria-labelledby="booking-title">
+        <h2 class="panel__title" id="booking-title">Book your tour</h2>
+        <p class="panel__intro">Choose a date and time. We'll confirm by email.</p>
+
+        <div class="form-grid">
+          <div class="field">
+            <label for="tour-name">Name</label>
+            <input class="input" id="tour-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="tour-email">Email</label>
+            <input class="input" id="tour-email" name="email" type="email" autocomplete="email" inputmode="email" required>
+          </div>
+          <div class="field">
+            <label for="tour-phone">Phone</label>
+            <input class="input" id="tour-phone" name="phone" type="tel" autocomplete="tel" placeholder="+94 77 123 4567" required>
+          </div>
+          <div class="field">
+            <label for="tour-date">Date</label>
+            <input class="input" id="tour-date" name="date" type="date" required>
+          </div>
+          <fieldset class="field field--group">
+            <legend>Time slot</legend>
+            <div class="slot-list">
+              <label class="slot"><input type="radio" name="slot" value="9:00 AM"><span>9:00 AM</span></label>
+              <label class="slot"><input type="radio" name="slot" value="11:00 AM"><span>11:00 AM</span></label>
+              <label class="slot"><input type="radio" name="slot" value="2:00 PM"><span>2:00 PM</span></label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="tour-people">Number of people</label>
+            <div class="stepper">
+              <button type="button" data-step="-1" aria-label="One fewer person">&minus;</button>
+              <input class="stepper__input" id="tour-people" name="people" type="number" inputmode="numeric" min="1" max="15" step="1" value="1" required>
+              <button type="button" data-step="1" aria-label="One more person">+</button>
+            </div>
+            <p class="field-hint">Up to 15 people per time slot.</p>
+          </div>
+        </div>
+
+        <div class="tour-total" aria-live="polite">
+          <div>
+            <span class="tour-total__label">Total</span>
+            <span class="tour-total__breakdown" data-tour-breakdown>1 person × LKR 2,500</span>
+          </div>
+          <span class="tour-total__amount" data-tour-total>LKR 2,500</span>
+        </div>
+
+        <button class="btn btn--primary btn--block" type="submit">Request booking</button>
+
+        <div class="form-success" data-form-success role="status" tabindex="-1" hidden>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m8 12.5 2.5 2.5L16 9.5"/></svg>
+          <p></p>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-logo">Mistyhill Ceylon Tea</p>
+        <p class="footer-tagline">Family-grown, hand-picked tea from the hills of Nuwara Eliya since 1962.</p>
+      </div>
+      <div>
+        <h2 class="footer-heading">Get in touch</h2>
+        <ul class="footer-list">
+          <li><a href="mailto:hello@mistyhilltea.lk">hello@mistyhilltea.lk</a></li>
+          <li><a href="tel:+94520000000">+94 52 000 0000</a></li>
+          <li><span class="footer-list__label">WhatsApp</span> <a href="https://wa.me/94770000000">+94 77 000 0000</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer-heading">Our outlets</h2>
+        <ul class="footer-list">
+          <li><a href="contact.html#outlets">Nuwara Eliya</a></li>
+          <li><a href="contact.html#outlets">Kandy</a></li>
+          <li><a href="contact.html#outlets">Colombo</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span data-year>2026</span> Mistyhill Ceylon Tea. All rights reserved.</p>
+      <p>Open daily, 9:00 AM to 7:00 PM</p>
+    </div>
+  </footer>
+</body>
+</html>
